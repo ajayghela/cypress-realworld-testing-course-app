@@ -17,4 +17,6 @@ describe("Newsletter Subscribe Form", () => {
         cy.getByData("submit-button").click()
         cy.getByData("server-error-message").should("exist").contains("already exists. Please use a different email address.")
     })
+
+    
 })
